@@ -1,3 +1,4 @@
+//statistics
 import stat from 'data/data.json';
 import { FaRegThumbsUp } from 'react-icons/fa';
 import { MdPeople, MdOutlineProductionQuantityLimits } from 'react-icons/md';

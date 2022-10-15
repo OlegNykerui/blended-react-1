@@ -9,7 +9,9 @@ import {
 } from 'components';
 
 import article from 'data/article.json';
-import {statistics} from './helpers'
+import forbes from 'data/forbes.json';
+
+import { statistics } from './helpers';
 
 export const App = () => {
   return (
@@ -31,12 +33,12 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics  title="Main Statistics" stats={statistics}/>
+        <Statistics title="Main Statistics" stats={statistics} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList />
+        <ForbesList list={forbes} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4

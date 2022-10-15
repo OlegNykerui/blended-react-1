@@ -28,6 +28,7 @@ export const BlogCard = ({
 }) => {
   // const result = formatDistanceToNow(new Date(2014, 6, 2));
   // console.log(result);
+  //fix this
   return (
     <Card>
       <CardHeader>

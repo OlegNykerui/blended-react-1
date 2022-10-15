@@ -1,4 +1,7 @@
+import PropTypes from 'prop-types';
+
 import { ForbesListItem } from 'components';
+
 import {
   BoardHeader,
   LeaderBoard,
@@ -8,7 +11,7 @@ import {
   LeaderBoardProfiles,
 } from './ForbesList.styled';
 
-export const ForbesList = () => {
+export const ForbesList = ({ list }) => {
   return (
     <LeaderBoard>
       <BoardHeader>
@@ -19,8 +22,30 @@ export const ForbesList = () => {
       </BoardHeader>
 
       <LeaderBoardProfiles>
-        {/* Довільна кіл-сть FriendListItem */}
+        {list.map(i => {
+          return (
+            <ForbesListItem
+              key={i.id}
+              name={i.name}
+              avatar={i.avatar}
+              capital={i.capital}
+              isIncrease={i.isIncrease}
+            />
+          );
+        })}
       </LeaderBoardProfiles>
     </LeaderBoard>
   );
+};
+
+ForbesList.propTypes = {
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      avatar: PropTypes.string.isRequired,
+      capital: PropTypes.number.isRequired,
+      isIncrease: PropTypes.bool.isRequired,
+    }),
+  ),
 };
