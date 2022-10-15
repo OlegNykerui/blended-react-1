@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 // import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+
 import {
   Card,
   CardBody,
@@ -25,7 +26,8 @@ export const BlogCard = ({
   avatar,
   postedAt,
 }) => {
-  // console.log(formatDistanceToNow(new Date(2014, 6, 2), { addSuffix: true }));
+  // const result = formatDistanceToNow(new Date(2014, 6, 2));
+  // console.log(result);
   return (
     <Card>
       <CardHeader>
@@ -48,8 +50,6 @@ export const BlogCard = ({
     </Card>
   );
 };
-
-// console.log(BlogCard);
 
 BlogCard.propTypes = {
   poster: PropTypes.string.isRequired,
