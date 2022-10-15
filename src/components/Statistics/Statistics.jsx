@@ -7,7 +7,33 @@ import { GiTreeDoor } from 'react-icons/gi';
 export const Statistics = () => {
   return (
     <>
-      <div>StatisticsList</div>
+      {/* <StatisticTitle>Main Statistics</StatisticTitle>
+
+      <StatisticsList>
+        <StatisticBox>
+      
+          <StatisticCounter>2147</StatisticCounter>
+          <StatisticText>Happy Customers</StatisticText>
+        </StatisticBox>
+
+        <StatisticBox>
+         
+          <StatisticCounter>3275</StatisticCounter>
+          <StatisticText>Registered Members</StatisticText>
+        </StatisticBox>
+
+        <StatisticBox>
+          
+          <StatisticCounter>289</StatisticCounter>
+          <StatisticText>Available Products</StatisticText>
+        </StatisticBox>
+
+        <StatisticBox>
+          
+          <StatisticCounter>1563</StatisticCounter>
+          <StatisticText>Saved Trees</StatisticText>
+        </StatisticBox>
+      // </StatisticsList> */}
     </>
   );
 };
